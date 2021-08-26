@@ -1,0 +1,9 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/config/staging.dart
+ASSET_PREFIX=stging
+BUNDLE_NAME=Guard-stag
+FACEBOOK_APP_ID=750052912471264
+FACEBOOK_APP_ID_SCHEMES=fb750052912471264
+APP_SUFFIX=com.dotsocket.guardApp.stg
+//APP_SUFFIX_NOTI=com.naifarm.app.stg.OneSignalNotificationServiceExtension

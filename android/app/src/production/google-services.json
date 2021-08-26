@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "891950861123",
+    "project_id": "naifarm-production",
+    "storage_bucket": "naifarm-production.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891950861123:android:eaba12fb5384f6373f3df6",
+        "android_client_info": {
+          "package_name": "com.naifarm.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891950861123-okrorp93dj515t6tkf0fpnf582d4ef67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGWGGAZRaF0JHH4-xTnmEahXJdXMj6Djo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891950861123-okrorp93dj515t6tkf0fpnf582d4ef67.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "891950861123-8520h6da3k1rph44hgvi9dr5kscrgbpk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.naifarm.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
