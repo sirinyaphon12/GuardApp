@@ -2,9 +2,10 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import 'package:guard_app/app/core/routes/app_pages.dart';
 import 'package:guard_app/app/pages/controller/login_controller.dart';
 import 'package:guard_app/app/pages/widgets/appCheckBox_widget.dart';
-import 'package:guard_app/app/pages/widgets/appSocialButton_widget.dart';
+import 'package:guard_app/app/pages/widgets/appOutlinedButton_widget.dart';
 import 'package:guard_app/app/pages/widgets/appTextButton_widget.dart';
 import 'package:guard_app/app/pages/widgets/appTextFormField_widget.dart';
 import 'package:guard_app/app/theme/app_texts.dart';
@@ -31,13 +32,13 @@ class LoginScreen extends GetView<LoginController> {
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 5.h),
-                  width: Get.width * 0.80,
+                  width: 80.w,
                   child: Form(
                     key: controller.formKey,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(MessageKey.LOGIN, style: titleTagTextStyle),
+                        Text(MessageKey.LOGIN, style: AppTexts.titleTagTextStyle),
                         SizedBox(
                           height: 0.5.h,
                         ),
@@ -63,7 +64,7 @@ class LoginScreen extends GetView<LoginController> {
                                 onPressed: () {},
                                 child: Text(
                                   MessageKey.FORGETPASS,
-                                  style: textButtonStyle,
+                                  style: AppTexts.textButtonStyle,
                                 ))
                           ],
                         ),
@@ -71,9 +72,7 @@ class LoginScreen extends GetView<LoginController> {
                           textButton: MessageKey.LOGIN,
                           onPressed: () {
                             if (controller.formKey.currentState!.validate()) {
-                              // Form Complete
-                            } else {
-                              // Form Not Complete
+                             Get.offNamed(Routes.DASHBOARD);
                             }
                           },
                         ),
@@ -84,18 +83,18 @@ class LoginScreen extends GetView<LoginController> {
                             SvgPicture.asset(Constant.SVG_LINE_BLACK),
                             Text(
                               MessageKey.OR,
-                              style: textBodyStyle,
+                              style: AppTexts.textBodyStyle,
                             ),
                             SvgPicture.asset(Constant.SVG_LINE_BLACK),
                           ],
                         ),
                         SizedBox(height: 2.h),
-                        AppSocialButton(
+                        AppOutlinedButton(
                           icon: Constant.SVG_GOOGLE_ICON,
                           textButton: '${MessageKey.CONTIUNUSING} ${MessageKey.GOOGLE}',
                           onPressed: () {},
                         ),
-                        AppSocialButton(
+                        AppOutlinedButton(
                           icon: Constant.SVG_FACEBOOK_ICON,
                           textButton: '${MessageKey.CONTIUNUSING} ${MessageKey.FACEBOOK}',
                           onPressed: () {},
@@ -105,14 +104,14 @@ class LoginScreen extends GetView<LoginController> {
                           children: [
                             Text(
                               MessageKey.NOT_ACCOUNT_YET,
-                              style: textButtonStyle,
+                              style: AppTexts.textButtonStyle,
                             ),
                             SizedBox(),
                             TextButton(
                                 onPressed: () {},
                                 child: Text(
                                   '${MessageKey.REGISTER}?',
-                                  style: textButton_UnerLineStyle,
+                                  style: AppTexts.textButton_UnerLineStyle,
                                 ))
                           ],
                         )

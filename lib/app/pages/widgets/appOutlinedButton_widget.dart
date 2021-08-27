@@ -7,12 +7,12 @@ import 'package:guard_app/app/theme/app_texts.dart';
 import 'package:guard_app/app/theme/constant.dart';
 import 'package:sizer/sizer.dart';
 
-class AppSocialButton extends StatelessWidget {
+class AppOutlinedButton extends StatelessWidget {
   final String textButton;
   late double width;
   late String icon;
   final VoidCallback onPressed;
-  AppSocialButton({this.width=0,required this.onPressed, required this.textButton,this.icon=''});
+  AppOutlinedButton({this.width=0,required this.onPressed, required this.textButton,this.icon=''});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class AppSocialButton extends StatelessWidget {
         children: [
           icon.isNotEmpty?Expanded(flex: 1,child: Align(alignment: Alignment.centerRight,child: SvgPicture.asset(icon),)):SizedBox(),
           SizedBox(width: 3.w,),
-          Expanded(flex: icon.isNotEmpty?3:0,child: Text(textButton,style: socialButtonStyle,))
+          Expanded(flex: icon.isNotEmpty?3:0,child: Text(textButton,style: AppTexts.socialButtonStyle,))
         ],
       )),
     );

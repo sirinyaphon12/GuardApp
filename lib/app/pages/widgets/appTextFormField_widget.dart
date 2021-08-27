@@ -31,7 +31,7 @@ class AppTextFormField extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(height: 1.5.h),
-          Text(labelTextForm, style: labelTextStyle),
+          Text(labelTextForm, style: AppTexts.labelTextStyle),
           SizedBox(height: 0.5.h),
           Stack(
             children: [
@@ -49,7 +49,7 @@ class AppTextFormField extends StatelessWidget {
                         borderSide: new BorderSide(),
                       )),
                   validator: validator,
-                    style:TextFieldStyle
+                    style:AppTexts.TextFieldStyle
                 );
               }, onShowPass),
               obscureText!

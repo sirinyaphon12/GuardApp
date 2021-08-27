@@ -21,7 +21,7 @@ class AppCheckBox extends StatelessWidget {
               children: [
                 SvgPicture.asset(selectBox.value?Constant.SVG_CHECKBOX:Constant.SVG_UNCHECK_BOX,width: 4.5.w,height: 4.5.w,),
                 SizedBox(width: 2.w),
-                Text(label,style: textButtonStyle,)
+                Text(label,style: AppTexts.textButtonStyle,)
               ],
             ),
           ),

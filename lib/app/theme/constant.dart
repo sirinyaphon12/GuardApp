@@ -22,6 +22,9 @@ class Constant{
   static const String SVG_LINE_BLACK = _SVG_PATH + 'line_black.svg';
   static const String SVG_GOOGLE_ICON = _SVG_PATH + 'google_icon.svg';
   static const String SVG_FACEBOOK_ICON = _SVG_PATH + 'facebook_icon.svg';
+  static const String SVG_HOME_ICON = _SVG_PATH + 'home_icon.svg';
+  static const String SVG_QR_CODE_ICON = _SVG_PATH + 'qr_code_icon.svg';
+  static const String SVG_PATROL_ICON = _SVG_PATH + 'patrol_icon.svg';
 
 
 

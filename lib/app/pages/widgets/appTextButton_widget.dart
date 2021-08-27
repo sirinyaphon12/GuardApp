@@ -29,7 +29,7 @@ class AppTextButton extends StatelessWidget {
         overlayColor: MaterialStateProperty.all(
           Colors.white.withOpacity(0.3),
         ),
-      ), child: Text(textButton,style: buttonTextStyle,)),
+      ), child: Text(textButton,style: AppTexts.buttonTextStyle,)),
     );
   }
 }
