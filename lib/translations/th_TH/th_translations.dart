@@ -15,7 +15,13 @@ final Map<String, String> thTH = {
   // Error text
   'input_empty' : 'ต้องไม่ว่างเปล่า!',
   'facebook':'Facebook',
-  'google':'Google'
+  'google':'Google',
+
+
+
+  //Dialog
+  'dialog_load' : 'กำลังโหลด ...',
+
 
 
   //example

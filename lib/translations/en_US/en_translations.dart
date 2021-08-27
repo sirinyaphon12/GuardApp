@@ -15,7 +15,10 @@ final Map<String, String> enUs = {
   // Error text
   'input_empty' : 'Input cannot be empty!!',
   'facebook':'Facebook',
-  'google':'Google'
+  'google':'Google',
+
+  //Dialog
+  'dialog_load' : 'Loading ...',
 
 
   //example

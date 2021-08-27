@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:guard_app/app/core/routes/app_pages.dart';
@@ -11,11 +12,15 @@ import 'package:guard_app/app/pages/widgets/appTextFormField_widget.dart';
 import 'package:guard_app/app/theme/app_texts.dart';
 import 'package:guard_app/app/theme/constant.dart';
 import 'package:guard_app/translations/message_key.dart';
+import 'package:guard_app/utility/helper/function_helper.dart';
 import 'package:sizer/sizer.dart';
 
 class LoginScreen extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
+
+
+
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
@@ -38,7 +43,8 @@ class LoginScreen extends GetView<LoginController> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(MessageKey.LOGIN, style: AppTexts.titleTagTextStyle),
+                        Text(MessageKey.LOGIN,
+                            style: AppTexts.titleTagTextStyle),
                         SizedBox(
                           height: 0.5.h,
                         ),
@@ -59,7 +65,10 @@ class LoginScreen extends GetView<LoginController> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            AppCheckBox(selectBox: true.obs,label: MessageKey.REMEMBER_ME,),
+                            AppCheckBox(
+                              selectBox: true.obs,
+                              label: MessageKey.REMEMBER_ME,
+                            ),
                             TextButton(
                                 onPressed: () {},
                                 child: Text(
@@ -72,7 +81,15 @@ class LoginScreen extends GetView<LoginController> {
                           textButton: MessageKey.LOGIN,
                           onPressed: () {
                             if (controller.formKey.currentState!.validate()) {
-                             Get.offNamed(Routes.DASHBOARD);
+                              // Get.offNamed(Routes.DASHBOARD);
+                              //Get.dialog(FunctionHelper.showDialogProcess(context));
+                              FunctionHelper.defaultDialog;
+                              Future.delayed(const Duration(milliseconds: 1500), () {
+                                Get.back();
+                                Get.offNamed(Routes.DASHBOARD);
+                              });
+
+                             // EasyLoading.dismiss();
                             }
                           },
                         ),
@@ -91,12 +108,14 @@ class LoginScreen extends GetView<LoginController> {
                         SizedBox(height: 2.h),
                         AppOutlinedButton(
                           icon: Constant.SVG_GOOGLE_ICON,
-                          textButton: '${MessageKey.CONTIUNUSING} ${MessageKey.GOOGLE}',
+                          textButton:
+                              '${MessageKey.CONTIUNUSING} ${MessageKey.GOOGLE}',
                           onPressed: () {},
                         ),
                         AppOutlinedButton(
                           icon: Constant.SVG_FACEBOOK_ICON,
-                          textButton: '${MessageKey.CONTIUNUSING} ${MessageKey.FACEBOOK}',
+                          textButton:
+                              '${MessageKey.CONTIUNUSING} ${MessageKey.FACEBOOK}',
                           onPressed: () {},
                         ),
                         Row(

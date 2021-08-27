@@ -19,4 +19,8 @@ abstract class  MessageKey {
   // Error text
   static var INPIT_EMPTY = "input_empty".tr;
 
+
+  //Dialog
+  static var DIALOG_LOAD = "dialog_load".tr;
+
 }

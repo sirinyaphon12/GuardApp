@@ -34,6 +34,7 @@ class AppTexts{
         fontWeight: FontWeight.w400
     );
 
+
     static TextStyle get labelTextStyle => GoogleFonts.kanit(
         color: Colors.black12.withOpacity(0.5),
         fontSize: 11.sp,
@@ -78,6 +79,12 @@ class AppTexts{
         color: color,
         fontSize: 11.sp,
         fontWeight: FontWeight.bold
+    );
+
+    static TextStyle get titleDialogTextStyle => GoogleFonts.kanit(
+        color: defaultTextColor,
+        fontSize: 17.sp,
+        fontWeight: FontWeight.w400
     );
 }
 
