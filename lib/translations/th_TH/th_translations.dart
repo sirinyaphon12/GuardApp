@@ -12,6 +12,18 @@ final Map<String, String> thTH = {
   'continue' : 'ดำเนินการต่อโดยใช้',
   'not_account_yet' : 'ยังไม่มีบัญชีใช่ไหม?',
 
+
+  // Report problem
+  'problem' : 'ปัญหา',
+  'detail' : 'รายละเอียด',
+  'location' : 'สถานที่',
+  'report_problem' : 'แจ้งปัญหา',
+  'cancel' : 'ยกเลิก',
+  'scanqr_code' : 'แสกน QR Code',
+
+
+
+
   // Error text
   'input_empty' : 'ต้องไม่ว่างเปล่า!',
   'facebook':'Facebook',
@@ -21,6 +33,10 @@ final Map<String, String> thTH = {
 
   //Dialog
   'dialog_load' : 'กำลังโหลด ...',
+  'camera':'กล้อง',
+  'gallery':'แกลเลอรี่',
+
+
 
 
 

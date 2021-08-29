@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:guard_app/app/core/routes/app_pages.dart';
 import 'package:guard_app/app/theme/app_theme.dart';
@@ -21,7 +20,6 @@ class Application extends StatelessWidget {
             theme: appThemeData,
             initialRoute: AppPages.INITIAL,
             getPages: AppPages.routes,
-            builder: EasyLoading.init(),
           );
         }
     );

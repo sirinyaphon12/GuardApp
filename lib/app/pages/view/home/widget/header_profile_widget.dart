@@ -3,10 +3,12 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:guard_app/app/core/routes/app_pages.dart';
 import 'package:guard_app/app/pages/widgets/appCircleButton_widget.dart';
 import 'package:guard_app/app/pages/widgets/appOutlinedButton_widget.dart';
 import 'package:guard_app/app/theme/app_colors.dart';
 import 'package:guard_app/app/theme/app_texts.dart';
+import 'package:guard_app/translations/message_key.dart';
 import 'package:sizer/sizer.dart';
 
 class HeaderProfile extends StatelessWidget {
@@ -15,6 +17,7 @@ class HeaderProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(top: 1.h),
       width: Get.width,
       child: Column(
         children: [
@@ -31,7 +34,6 @@ class HeaderProfile extends StatelessWidget {
                   errorWidget: (context, url, error) => Icon(Icons.error),
                 ),
               ),
-              Spacer(),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -44,7 +46,7 @@ class HeaderProfile extends StatelessWidget {
                 children: [
                   CircleButton(size: 10.w, iconData: Icons.notifications_none,onTap: () {
 
-                  },),
+                  },badge: true,),
                   SizedBox(width: 2.w,),
                   CircleButton(size: 10.w, iconData: Icons.settings,onTap: () {
 
@@ -60,13 +62,16 @@ class HeaderProfile extends StatelessWidget {
             children: [
               AppOutlinedButton(
                 width: 40.w,
-                textButton: 'แจ้งปัญหา',
-                onPressed: () {},
+                textButton: MessageKey.REPORT_PROBLEM,
+                onPressed: () {
+
+                  Get.toNamed(Routes.REPORTPROBLEM);
+                },
               ),
               SizedBox(width: 3.w,),
               AppOutlinedButton(
                 width: 40.w,
-                textButton: 'แสกน QR Code',
+                textButton: MessageKey.SCAN_QR,
                 onPressed: () {},
               ),
             ],

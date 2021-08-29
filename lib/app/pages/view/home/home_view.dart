@@ -43,7 +43,7 @@ class HomeScreen extends GetView<HomeController> {
   Widget _weekdayCard({required WeekModel item}) {
     return Container(
       padding: EdgeInsets.all(2.5.w),
-      height: 10.h,
+      height: 12.h,
       decoration: BoxDecoration(
         border: Border(
           bottom: BorderSide(width: 1.0, color: Colors.black26 ),
@@ -93,7 +93,8 @@ class HomeScreen extends GetView<HomeController> {
                            children: [
                              Text(item.date, style: AppTexts.subTitleTextStyle),
                              SizedBox(width: 2.w,),
-                             _ConvertWeekDay(item.range)
+                             _ConvertWeekDay(item.range),
+
                            ],//Range
                          )
                         ],

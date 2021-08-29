@@ -10,12 +10,13 @@ class AppTextFormField extends StatelessWidget {
   final FormFieldValidator<String>? validator;
   final TextEditingController? controller;
   final bool? obscureText;
+  final int maxLines;
 
   AppTextFormField(
       {this.validator,
       this.labelTextForm = "write label text",
       this.controller,
-      this.obscureText = false});
+      this.obscureText = false, this.maxLines=1});
 
   RxBool onShowPass = false.obs;
 
@@ -39,6 +40,7 @@ class AppTextFormField extends StatelessWidget {
                 return TextFormField(
                   obscureText: (v as RxBool).value,
                   controller: controller,
+                  maxLines: maxLines,
                   decoration: new InputDecoration(
                       contentPadding: EdgeInsets.only(
                           left: 3.w, top: 1.w, bottom: 1.w, right: 2.w),

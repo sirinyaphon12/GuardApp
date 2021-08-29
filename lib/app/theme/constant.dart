@@ -13,6 +13,8 @@ class Constant{
   static const String IMG_LOGO = _IMG_PATH + 'Logo.png';
   static const String IMG_SHOW_PASS = _IMG_PATH + 'show_pass.png';
   static const String IMG_HIDE_PASS = _IMG_PATH + 'hind_pass.png';
+  static const String IMG_CAMERA_ICON = _IMG_PATH + 'camera.png';
+  static const String IMG_GALLERY_ICON = _IMG_PATH + 'gallery.png';
 
   //image svg
   static const String _SVG_PATH = 'assets/images/svg/';
@@ -31,7 +33,7 @@ class Constant{
   //BorderRadius
   static const int BUTTON_RADIUS = 2;
   static const int FORM_FIELD_RADIUS = 3;
-  static const double OUTlINEDBUTTON_RADIUS = 0.3;
+  static const double OUTlINEDBUTTON_RADIUS = 0.4;
 
 
 

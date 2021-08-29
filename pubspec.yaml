@@ -40,7 +40,10 @@ dependencies:
   flutter_svg: ^0.22.0
   sizer: ^2.0.13
   sticky_headers: ^0.2.0
-  flutter_easyloading: ^3.0.0
+  image_picker:
+  permission_handler:
+  rxdart: ^0.27.1
+  badges: ^2.0.1
 
 dev_dependencies:
   flutter_test:

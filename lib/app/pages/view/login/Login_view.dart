@@ -1,6 +1,4 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:guard_app/app/core/routes/app_pages.dart';
@@ -13,14 +11,12 @@ import 'package:guard_app/app/theme/app_texts.dart';
 import 'package:guard_app/app/theme/constant.dart';
 import 'package:guard_app/translations/message_key.dart';
 import 'package:guard_app/utility/helper/function_helper.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:sizer/sizer.dart';
 
 class LoginScreen extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
-
-
-
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
@@ -79,17 +75,20 @@ class LoginScreen extends GetView<LoginController> {
                         ),
                         AppTextButton(
                           textButton: MessageKey.LOGIN,
-                          onPressed: () {
+                          onPressed: () async {
                             if (controller.formKey.currentState!.validate()) {
                               // Get.offNamed(Routes.DASHBOARD);
-                              //Get.dialog(FunctionHelper.showDialogProcess(context));
+                              // Get.dialog(FunctionHelper.showDialogProcess(context));
                               FunctionHelper.defaultDialog;
-                              Future.delayed(const Duration(milliseconds: 1500), () {
+                              Future.delayed(const Duration(milliseconds: 1500),
+                                  () {
                                 Get.back();
                                 Get.offNamed(Routes.DASHBOARD);
                               });
 
-                             // EasyLoading.dismiss();
+                              // final List<XFile>? pickedFile = await ImagePicker().pickMultiImage();
+
+                              // EasyLoading.dismiss();
                             }
                           },
                         ),
@@ -130,7 +129,7 @@ class LoginScreen extends GetView<LoginController> {
                                 onPressed: () {},
                                 child: Text(
                                   '${MessageKey.REGISTER}?',
-                                  style: AppTexts.textButton_UnerLineStyle,
+                                  style: AppTexts.textButtonUderLineStyle,
                                 ))
                           ],
                         )

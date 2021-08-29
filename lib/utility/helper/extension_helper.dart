@@ -5,6 +5,7 @@
 //     return "${this[0].toUpperCase()}${this.substring(1)}";
 //   }
 //
+//
 //   String dateFormat({String symbol = "-", bool isReverse = false}) {
 //     return isReverse
 //         ? DateFormat('yyyy${symbol}MM${symbol}dd').format(DateTime.parse(this))

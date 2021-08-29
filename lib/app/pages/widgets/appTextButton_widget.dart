@@ -25,7 +25,8 @@ class AppTextButton extends StatelessWidget {
         backgroundColor: MaterialStateProperty.all(
           primaryColor,
         ),
-        shadowColor: MaterialStateProperty.all(primaryColor),
+        elevation: MaterialStateProperty.all(1.5.w),
+        shadowColor: MaterialStateProperty.all(secondaryColor.withOpacity(0.8)),
         overlayColor: MaterialStateProperty.all(
           Colors.white.withOpacity(0.3),
         ),

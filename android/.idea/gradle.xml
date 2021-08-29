@@ -10,7 +10,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.2/android" />
+            <option value="$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+3/android" />
             <option value="$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.2/android" />
+            <option value="$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-8.1.4+2/android" />
+            <option value="$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.0.0+4/android" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

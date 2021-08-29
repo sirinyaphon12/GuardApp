@@ -16,11 +16,22 @@ abstract class  MessageKey {
   static var GOOGLE = "google".tr;
 
 
+  // Report problem
+  static var PROBLEM = "problem".tr;
+  static var DETAIL = "detail".tr;
+  static var LOCATION = "location".tr;
+  static var REPORT_PROBLEM = "report_problem".tr;
+  static var CANCEL = "cancel".tr;
+  static var SCAN_QR = "scanqr_code".tr;
+
+
   // Error text
   static var INPIT_EMPTY = "input_empty".tr;
 
 
   //Dialog
   static var DIALOG_LOAD = "dialog_load".tr;
+  static var CAMERA = "camera".tr;
+  static var GALLERT = "gallery".tr;
 
 }
