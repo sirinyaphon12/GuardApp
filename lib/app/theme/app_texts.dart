@@ -80,7 +80,7 @@ class AppTexts {
       Paint? foreground,
       Paint? background,
       TextDecoration? decoration}) {
-    return fontTheme(
+    return GoogleFonts.kanit(
         fontWeight: fontWeight,
         fontSize: fontSize,
         color: color,
